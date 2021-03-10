@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>EST-SB - Home</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+
+<body>
+  <section id="ucd">
+
+  </section>
+  <!-- Nav-Bar -->
+  <nav>
+    <div class="menu-icon">
+      <span class="fas fa-bars"></span></div>
+
+    <div class="logo">
+      EST-SB</div>
+    <div class="nav-items">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Emploi du temps</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="loginprof.php">E-Enseignant</a></li>
+      <li><a href="etudiant.html">E-Etudiant</a></li>
+
+    </div>
+    <div class="search-icon">
+      <span class="fas fa-search"></span></div>
+    <div class="cancel-icon">
+      <span class="fas fa-times"></span></div>
+    <form action="#">
+      <input type="search" class="search-data" placeholder="Search" required>
+      <button type="submit" class="fas fa-search"></button>
+    </form>
+  </nav>
+
+  <script>
+    const menuBtn = document.querySelector(".menu-icon span");
+    const searchBtn = document.querySelector(".search-icon");
+    const cancelBtn = document.querySelector(".cancel-icon");
+    const items = document.querySelector(".nav-items");
+    const form = document.querySelector("form");
+    menuBtn.onclick = () => {
+      items.classList.add("active");
+      menuBtn.classList.add("hide");
+      searchBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+    }
+    cancelBtn.onclick = () => {
+      items.classList.remove("active");
+      menuBtn.classList.remove("hide");
+      searchBtn.classList.remove("hide");
+      cancelBtn.classList.remove("show");
+      form.classList.remove("active");
+      cancelBtn.style.color = "#ff3d00";
+    }
+    searchBtn.onclick = () => {
+      form.classList.add("active");
+      searchBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+    }
+  </script>
+  <!-- Fin nav -->
+  <!-- Section 1  -->
+  <section id="sec1">
+    <div class="container">
+
+      <div data-aos="flip-left">
+        <h1 class="h1 center">
+          AUX AVIS DES ETUDIANTS DES 2-EME ANNEES
+
+
+        </h1>
+      </div>
+
+      <div data-aos="flip-right">
+        <p class="p">
+          <b>
+            Soutenances à distance des Stages de Fin d’études
+          </b>
+
+        </p>
+      </div>
+
+  </section>
+  <!-- Fin Section 1 -->
+
+
+  <!--  Section 2-->
+  <section id="sec2">
+    <div class="container">
+      <div data-aos="fade-up">
+        <h1 class="h1-2">
+          ACTUALITES
+          <hr class="hr">
+        </h1>
+      </div>
+    </div>
+  </section>
+  <!-- Fin Section 2 -->
+
+
+
+  <!--  Section des slides -->
+  <section>
+    <div class="item" data-aos="zoom-in">
+    <div id="slider">
+
+      <input type="radio" name="slider" id="slide4" checked>
+      <input type="radio" name="slider" id="slide2">
+      <input type="radio" name="slider" id="slide3">
+      <input type="radio" name="slider" id="slide1">
+      <div id="slides">
+        <div id="overflow">
+          <div class="inner">
+            <div class="slide slide_1">
+              <div class="slide-content">
+                <h2 class="tawjihi">Communiqué Tawjihi 2020 – 2021</h2>
+
+              </div>
+            </div>
+            <div class="slide slide_2">
+              <div class="slide-content">
+                <h2>Education En Ligne : </h2>
+
+              </div>
+            </div>
+            <div class="slide slide_3">
+              <div class="slide-content">
+                <h2>Examen a distance consulter l'emploi : </h2>
+
+              </div>
+            </div>
+            <div class="slide slide_4">
+              <div class="slide-content">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="controls">
+        <label for="slide1"></label>
+        <label for="slide2"></label>
+        <label for="slide3"></label>
+        <label for="slide4"></label>
+      </div>
+      <div id="bullets">
+        <label for="slide1"></label>
+        <label for="slide2"></label>
+        <label for="slide3"></label>
+        <label for="slide4"></label>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- Fin Section slides -->
+  <!--  Section 3 -->
+  <section id="sec2">
+    <div class="container">
+      <div data-aos="fade-up">
+        <h1 class="h1-2">
+
+          A NOS ETUDIANTS :
+          <hr class="hr">
+        </h1>
+      </div>
+    </div>
+  </section>
+  <!-- Fin Section 3 -->
+
+
+  <!--  Section Actualités -->
+  <section id="ACTU">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-3">
+          <div data-aos="flip-left">
+            <div class="post">
+              <div class="post-img">
+                <img src="img/avis-au-etudiants2.png" alt="">
+              </div>
+              <div class="post-body">
+                <h3 class="post-title">Avis aux étudiants des 2èmes années </h3>
+                <p class="post-description">Objet : Accès Gratuit, pour les universités publiques</p>
+                <a href="#" class="post-btn">Lire la suite ...</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6 mb-3">
+          <div data-aos="flip-left">
+
+            <div class="post">
+              <div class="post-img">
+                <img src="img/avis-au-etudiants2.png" alt="">
+              </div>
+              <div class="post-body">
+                <h3 class="post-title">Liste des Emails des enseignants</h3>
+                <p class="post-description">Vous trouverez en attaché les comptes académiques des</p>
+                <a href="#" class="post-btn">Lire la suite ...</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-3">
+          <div data-aos="flip-left">
+            <div class="post">
+              <div class="post-img">
+                <img src="img/avis-au-etudiants2.png" alt="">
+              </div>
+              <div class="post-body">
+                <h3 class="post-title">Mot du monsieur le directeur : </h3>
+                <p class="post-description">Avis aux étudiants des Licences Professionnelles </p>
+                <a href="#" class="post-btn">Lire la suite ...</a>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+
+  </section>
+  <!-- Fin Section d'actualités-->
+
+
+  <!--  Section A propos -->
+  <section id="sec2">
+    <div class="container">
+      <div data-aos="fade-up">
+        <h1 class="h1-2">
+          A PROPOS
+          <hr class="hr">
+        </h1>
+        <div data-aos="fade-up">
+        </div>
+  </section>
+  <section id="ACTUs">
+    <div class="container">
+
+
+      <div class="col-lg-4 mx-auto col-md-6 mb-3 ">
+        <div class="post">
+          <div data-aos="fade-up">
+            <div class="post-img">
+              <img src="img/logo.png" alt="">
+            </div>
+            <div class="post-body">
+              <h3 class="post-title">Estsb en chiffres</h3>
+              <p class="post-description">Premier noyau universitaire relevant de l’université Chouaib
+                Doukalli à Eljadida </p>
+              <a href="#" class="post-btnn">Lire la suite ...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 mx-auto col-md-6 mb-3">
+        <div class="post">
+          <div data-aos="fade-up">
+            <div class="post-img">
+              <img src="img/images.jpg" alt="">
+            </div>
+            <div class="post-body">
+              <h3 class="post-title">Recherche scientifique</h3>
+              <p class="post-description">Une recherche appliquée pluridisciplinaire</p>
+              <a href="#" class="post-btnn">Lire la suite ...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mx-auto col-md-6 mb-3">
+        <div class="post">
+          <div data-aos="fade-up">
+            <div class="post-img">
+              <img src="img/aa.jpg" alt="">
+            </div>
+            <div class="post-body">
+              <h3 class="post-title">Formation</h3>
+              <p class="post-description">l’EST-Sidi-Bennour un établissement universitaire phare en formation
+                technologique courte</p>
+              <a href="#" class="post-btnn">Lire la suite ...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- Fin Section a propos -->
+
+  <!--  Section Département -->
+  <section id="sec2">
+    <div class="container">
+      <div data-aos="fade-up">
+        <h1 class="h1-2">
+
+          Nos Départements :
+          <hr class="hr2">
+        </h1>
+      </div>
+    </div>
+  </section>
+
+  <section id="form">
+    <div class="container">
+
+
+      <div class="container py-5"></div>
+
+      <div class="row">
+
+
+
+        <div class="col-lg-4">
+          <div data-aos="fade-up-right">
+            <div class="image"> </div>
+            <h1 class=" p2 display-4 mb-5 form12 center"> Génie informatique</h1>
+          </div>
+        </div>
+
+        <div class="col-lg-4 ">
+          <div data-aos="fade-up-right">
+            <div class="imagee"> </div>
+            <h1 class="p2 display-4 mb-5 form12 center"> Génie agricole </h1>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 ">
+          <div data-aos="fade-up-left">
+            <div class="imageee"> </div>
+            <h1 class="p2 display-4 mb-5 form12 center"> Téchnique de management </h1>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </section>
+  <!-- Fin Section departements -->
+
+  <!--  Section contact -->
+  <section id="section">
+    <div class="contact-section">
+      <div data-aos="fade-down">
+        <h1 class="h1-1">
+          CONTACTEZ NOUS
+          <hr class="hr2">
+        </h1>
+      </div>
+      <div class="border"></div>
+      <form class="contact-form" action="index.html" method="POST">
+        <div data-aos="fade-down">
+        <input class="contact-form-text" type="text" placeholder="Your name">
+        </div>
+        <div data-aos="fade-down">
+        <input class="contact-form-text" type="email" placeholder="Your email">
+        </div>
+        <div data-aos="fade-down">
+        <input class="contact-form-text" type="text" placeholder="Your number">
+        </div>
+        <div data-aos="fade-down">
+        <textarea class="contact-form-text" placeholder="Your message"></textarea>
+        </div>
+        <div data-aos="fade-down">
+        <input type="submit" class="contact-form-btn" value="send">
+      </div>
+      </form>
+    </div>
+
+  </section>
+  <!-- Fin Section contact -->
+  <section>
+  </section>
+
+
+  <footer id="footer">
+    <p class="p1">
+      EST-SB tous les droits reservés &copy;
+      2020
+    </p>
+  </footer>
+  <!-- Core -->
+  <script src="/assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Argon JS -->
+  <script src="/assets/js/argon.min.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

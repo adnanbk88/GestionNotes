@@ -1,0 +1,66 @@
+.dark {
+    background-color: black;
+}
+.dark .serach-bar {
+    margin-right: 2rem;
+}
+#about-page {
+    padding: 50px 0;
+} 
+#about-page h1{
+    font-size: 2.5rem;
+}
+#about-page p {
+    color: #2d2d2d;
+    line-height: 1.5;
+    font-size: 18px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+.input {
+    padding: 13px;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    border: 1px solid #6e6e6e;
+    resize: vertical;
+}
+.send-btn {
+    font-size: 18px;
+    padding: 11px;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    background: black;
+}
+.center {
+    align-items: center;
+}
+.course-img {
+    width: 100%;
+    padding-top: 65%;
+    position: relative;
+}
+.course-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.course-details p{
+    font-size: 16px !important;
+}
+.course-details a{
+    text-decoration: none;
+    background: black;
+    color: #fff;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 19px;
+    margin-top: 3rem;
+}
